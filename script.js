@@ -25,6 +25,9 @@ function updateclock() {
   let min = now.getMinutes();
   let sec = now.getSeconds();
 
+  if (hr > 12) {
+    hr = hr - 12;
+  }
   if (hr < 10) {
     hr = "0" + hr;
   }
